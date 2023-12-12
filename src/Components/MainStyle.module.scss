@@ -1,0 +1,346 @@
+@import "header";
+@import "mains";
+@import "footer";
+@import "burger";
+@import "deliver";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden; //убираем скролы
+}
+
+.active_body {
+  overflow-y: hidden;
+}
+
+* {
+  font-family: "El-Messiri";
+}
+
+.container {
+  width: 90vw;
+
+  margin: 0 auto;
+
+  z-index: 0;
+}
+
+@font-face {
+  font-family: "El-Messiri";
+  src: url("../assets/Fonts/El_Messiri/ElMessiri.ttf");
+}
+
+@font-face {
+  font-family: "Releway";
+  src: url("../assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .card {
+    width: 30vw;
+  }
+
+  .nav_interface {
+    gap: 5px;
+    & a {
+      font-size: 0.9em;
+    }
+
+    .make_order_btn {
+      width: 8vw;
+      height: 6vh;
+    }
+  }
+
+  .search_field {
+    width: 18vw;
+
+    & input {
+      width: 14vw;
+    }
+  }
+
+  .product_full {
+    width: 80vw;
+    height: 70vh;
+
+    & img {
+      width: 34vw;
+      height: 80%;
+    }
+  }
+
+  .deliver_variants button {
+    height: 9vh;
+  }
+
+  .logo {
+    & h3 {
+      font-size: 0.9em;
+    }
+
+    & p {
+      font-size: 0.9em;
+    }
+  }
+
+  .item {
+    align-self: center;
+  }
+
+  .products_card {
+    width: 27vw !important;
+  }
+
+  .pre_footer {
+    height: 50vh;
+  }
+
+  .our_task .info h1 {
+    font-size: 3em;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 100px) {
+  .container {
+    width: 96vw; //от основной ширины экрана
+  }
+
+  .delete_item {
+    top: 5px;
+    right: 10px;
+  }
+
+  .count {
+    align-items: center;
+  }
+
+  .item {
+    align-self: center;
+
+    gap: 10px;
+
+    width: 90vw;
+    height: 25vh;
+
+    & h2,
+    p {
+      margin: 0;
+    }
+  }
+
+  .item .sub_item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 10px;
+  }
+
+  .count .total {
+    width: 10vw;
+  }
+
+  .order_info {
+    gap: 10px;
+  }
+
+  .deliver {
+    & h2 {
+      margin: 0;
+    }
+  }
+
+  .deliver_date {
+    width: 50%;
+  }
+
+  .contact_fields {
+    flex-direction: column;
+
+    gap: 20px;
+
+    & form {
+      width: 100%;
+    }
+  }
+
+  .deliver_variants {
+    flex-direction: column;
+
+    gap: 20px;
+
+    & button {
+      width: 100%;
+
+      height: 12vh;
+
+      font-size: 1.2em;
+    }
+  }
+
+  .total_info {
+    & button {
+      width: 50vw;
+      height: 10vh;
+
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+
+    & p {
+      font-size: 1em;
+    }
+  }
+
+  .main_header {
+    background-position: 50%;
+  }
+
+  .products_header {
+    background-position: 60%;
+  }
+
+  .products_card {
+    width: 43vw !important;
+    height: 38vh !important;
+
+    & img {
+      height: 28vh !important;
+    }
+  }
+
+  .card_info {
+    width: 33vw;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    & h1 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+
+    & .price,
+    p {
+      margin: 0;
+    }
+
+    & p:not(.price) {
+      font-size: 0.8em;
+    }
+
+    .border {
+      margin-top: 2vh;
+    }
+
+    & button {
+      margin: 0;
+      width: 100%;
+      height: 7vh;
+    }
+  }
+
+  .product_full {
+    width: 98vw;
+    height: 45vh;
+
+    justify-content: center;
+
+    gap: 8vw;
+
+    & svg {
+      top: 10px;
+      right: 10px;
+    }
+
+    & img {
+      width: 40vw;
+      height: 80%;
+    }
+  }
+
+  .products_content {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5vw;
+  }
+
+  .our_task {
+    & img {
+      display: none;
+    }
+
+    & .info p {
+      width: 60vw;
+    }
+  }
+
+  .burger_btn {
+    display: block;
+  }
+
+  .pre_footer {
+    display: none;
+  }
+
+  .delivery * {
+    text-align: center;
+  }
+
+  .deliver_info {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .nav_interface {
+    display: none;
+  }
+
+  footer {
+    margin-top: 5vh;
+  }
+
+  footer * {
+    text-align: center;
+  }
+
+  .card {
+    width: 90vw;
+    height: 80vh;
+
+    & img {
+      height: 70vh;
+    }
+  }
+}
+
+@media (max-width: 400px) and (min-width: 100px) {
+  .our_task .info {
+    & h1 {
+      font-size: 3em;
+      line-height: 40px;
+    }
+
+    & p {
+      font-size: 1em;
+      width: 80vw;
+    }
+  }
+
+  .main_header h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    height: 61vh;
+  }
+}
